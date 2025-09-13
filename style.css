@@ -1,0 +1,694 @@
+
+
+@media (min-width: 213px) and (max-width: 700px) {
+
+  .qr-section {
+    display: none;
+  }
+
+.body {
+  font-family: 'Motiva Sans', 'Segoe UI', sans-serif;
+  background: #181A21;
+  background: radial-gradient( rgba(24, 26, 33, 0) 0%, #181A21 100%),  url("images/new_login_bg_strong_mask.jpg") top, #181A21;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 0px;
+}
+
+
+.header {
+  background: #171a21;
+  padding: 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav, .header-right {
+  display: none;
+}
+
+.header-container {display: flex;}
+
+
+.logo {
+  height: 40px;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav .a {
+  display: none;
+}
+
+.header-right {
+  display: none;
+}
+
+.main-login {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 0px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 400px;
+  z-index: 1;
+}
+
+.login-wrapper .sign-h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.login-box {
+  border-radius: 5px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form .login-label {
+  display: block;
+  color: #408cfe;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding-right: 95px;
+}
+
+.login-label2 {
+  display: block;
+  color: #b0b0b0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding-right: 200px;
+  padding-top: 10px;
+}
+
+.login-form .login-input {
+  width: 100%;
+  padding: 10px;
+  background: #32353c;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+.login-form .pass {
+  color: #e8e7e7d5;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.remember-me .button-size {
+  margin-right: 10px;
+}
+
+.button-size {
+    position: relative;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    accent-color: #5f6368;
+    color: #5f6368;
+    background-color: #5f6368;
+  }
+
+.color-remeber {
+  color: #b0b0b0;
+  font-size: 13px;
+}
+
+.sign-in-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #06bfff, #2d73ff);
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  filter: brightness(1.1);
+}
+
+.help-link {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #b0b0b0;
+  display: block;
+}
+
+
+
+.top-text {
+  color:  #2d73ff;
+}
+.mobile-text {
+  color: #b0b0b0;
+  font-size: 14px;
+  width: 120px;
+  padding-left: 80px;
+}
+
+.show-me {
+  background-color: rgb(255, 255, 255, .1);
+  max-width: 150px;
+  height: 40px;
+  margin-left: 60px;
+}
+
+.show-me-p {
+  color: white;
+  padding-top: 8px;
+  font-size: 14px;
+}
+
+.learn-more .learn-a {
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+.create-account {
+  padding: 0px 20px 40px 20px;
+  text-align: center;
+}
+
+.extra-space {display: none;}
+
+.account-text, .account-text-button {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.create-text, .account-link {
+  font-size: 14px;
+  color: #b0b0b0;
+}
+
+.create-account .account-text-button {
+  padding: 12px 24px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #06bfff, #2d73ff);
+  border: none;
+  color: white;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-account .sign-in-button:hover, .account-text-button:hover {
+  filter: brightness(1.1);
+}
+
+
+.footer-nav {
+  display: none;
+}
+
+.footer-section {
+  display: none;
+}
+}
+
+
+
+@media (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+
+  .html-body {
+    height: 100%;
+    min-height: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .body {
+    font-family: 'Motiva Sans', 'Segoe UI', sans-serif;
+    background: radial-gradient(rgba(24, 26, 33, 0) 0%, #181A21 100%) fixed no-repeat, url("images/new_login_bg_strong_mask.jpg") center top no-repeat, #181A21;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .header {
+    background: #171a21;
+    padding: 40px 0;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  .logo {
+    height: 55px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .nav .a {
+    color: #dcdedf;
+    margin: 0 10px 30px 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    right: 110px;
+  }
+
+  .a, .store-a {
+    font-size: 19px;
+  }
+
+  .store-a {
+    color: #1a9fff;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+    position: relative;
+    right: 110px;
+
+  }
+
+  .nav .a:hover {
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    bottom: 50px;
+    right: 70px;
+    
+  }
+
+  .install-btn {
+    background: #5c7e10;
+    color: white;
+    border: none;
+    padding: 3px 7px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .install-icon {
+    background: #5c7e10;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+  }
+
+  .little-icon {
+    width: 30px;
+    background: #5c7e10;
+  }
+
+  .btn {
+    font-size: 11px;
+    color: rgba(232, 231, 231, 0.838);
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+  }
+
+  .line {
+    color: rgba(232, 231, 231, 0.838);
+    font-size: 12px;
+  }
+
+  
+
+  .install-btn:hover {
+    background: #6fa218;
+  }
+
+  .install-icon:hover {
+    background: #6fa218;
+  }
+
+  .main-login {
+    position: relative;
+    min-height: 80vh;
+    background: url('images/new_login_bg_strong_mask.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+
+  .background-overlay {
+    position: absolute;
+    inset: 0;
+  }
+
+  .login-wrapper {
+    position: relative;
+    max-width: 900px;
+    width: 70%;
+    text-align: left;
+    z-index: 2;
+    padding: 40px;
+  }
+
+
+  .login-wrapper .sign-h1 {
+    position: relative;
+    bottom: 15px;
+    left: 13px;
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+
+  .login-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #171a21;
+    padding: 30px;
+    border-radius: 5px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+
+  .login-form {
+    flex: 1 1 300px;
+  }
+
+  .login-form .login-label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: #408cfe;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .login-label2 {
+  display: block;
+  color: #b0b0b0;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding-top: 15px;
+}
+
+  .login-form .pass {
+    color: rgba(232, 231, 231, 0.838)
+  }
+
+  .login-form .login-input, .pass {
+    width: 100%;
+    padding: 10px;
+    background: #32353c;
+    border: none;
+    color: white;
+    border-radius: 4px;
+  }
+
+  .login-form .sign-in-button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #06bfff, #2d73ff);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .login-form .sign-in-button:hover, .account-text-button:hover,
+  .create-account {
+    filter: brightness(1.1);
+  }
+
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 0px;
+    margin-top: 5px;
+  }
+
+  .remember-me .color-remeber {
+    color: #b0b0b0;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    padding-top: 7px;
+  }
+
+  .button-size {
+    position: relative;
+    top: 4px;
+    width: 25px;
+    height: 25px;
+    accent-color: #5f6368;
+    color: #5f6368;
+    background-color: #5f6368;
+  }
+
+  .button-size {
+    margin-right: 10px;
+    color: #5f6368
+  }
+
+  .login-form .sign-in-button {
+    height: 50px;
+    width: 250px;
+    position: relative;
+    left: 63px;
+  }
+
+  .help-link {
+    display: block;
+    margin-top: 45px;
+    font-size: 13px;
+    color: #b0b0b0;
+    position: relative;
+    left: 135px;
+  }
+
+  .qr-section {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .qr-section .qr-p {
+    font-weight: 600;
+    color: #408cfe;
+    margin-bottom: 10px;
+  }
+
+  .qr-p {
+    position: relative;
+    right: 50px;
+    top: 8px;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  .qr-img {
+    width: 230px;
+    height: 230px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .qr-text {
+    font-size: 12px;
+    margin-top: 8px;
+    color: #b0b0b0;
+    text-align: center;
+    line-height: 1.5;
+    width: 230px;
+  }
+
+  .qr-text .qr-link {
+    color: #b0b0b0;
+  }
+
+  .create-account {
+    background: #171a21;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+  }
+
+  .account-text, .account-text-button {
+    position: relative;
+    right: 100px;
+    top: 45px;
+    margin-right: 90px;
+  }
+
+  .account-text {margin-bottom: 0px;}
+
+  .create-account .create-text {
+    position: relative;
+    left: 620px;
+    width: 380px;
+    bottom: 60px;
+    font-size: 19px;
+    color: #b0b0b0;
+  }
+
+  .create-text .account-link {
+    color: #b0b0b0;
+  }
+
+  .create-account .account-text-button {
+    padding: 12px 24px 12px 24px;
+    background: linear-gradient(to right, #06bfff, #2d73ff);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    margin: 20px 90px 20px 0px;
+    cursor: pointer;
+  }
+
+  .footer-section {
+    background-color: #181A21;
+    color: #aab6c3;
+    height: 290px;
+    text-align: center;
+    margin: 0pX;
+    padding: 0px 50px 16px;
+  }
+
+  .footer-section .footer-image {
+    float: left;
+    padding-top: 2px;
+  }
+
+  .footer-links .footer-text-link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .account-text-button, .create-text{
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+
+  .footer-section .footer-bar {
+    height: 8px;
+    border-top: 1px solid #363c44;
+  }
+
+  .footer-logo .logo-footer {
+    float: right;
+    padding-top: 2px;
+  }
+
+  .logo-footer {
+    width: 100px;
+  }
+
+  .footer-image {
+    width: 100px;
+  }
+
+  .footer-links {
+  font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 0 10px 0;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    background: #171a21;
+  }
+
+  .footer-section {
+    float: left;
+    margin-left: 12px;
+    color: #8F98A0;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .footer-p {
+    width: 900px;
+    font-size: 15px;
+    padding-left: 100px;
+    padding-right: 150px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .footer-section .footer-nav {
+    margin-top: 8px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #61686D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
+
+
+  .footer-nav .bottom-text {
+    text-decoration: none;
+    color: #C6D4DF;
+    display: flex;
+   align-items: center;
+  }
+
+  .extra-space {
+    height: 60px;
+  }
+
+}
