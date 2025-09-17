@@ -3,13 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Steam Login</title>
+  <title>Login</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="body">
   <header class="header">
+    
     <div class="header-container">
-      <img src="images/logo_steam.svg" alt="Steam Logo" class="logo">
+      <nav class="bar">
+        <div>
+          <img class="hamburger-size" src="images/header_menu_hamburger.png" alt="hamburgler"> 
+        </div>
+        <div>
+          <img src="images/logo_steam.svg" alt="Steam Logo" class="logo"> 
+        </div>
+      </nav>
+      
+      
       <nav class="nav">
         <a class="store-a" href="#">Store</a>
         <a class="a" href="#">Community</a>
@@ -31,40 +41,40 @@
   <div class="main-login">
     <div class="background-overlay"></div>
     <div class="login-wrapper">
-
       <h1 class="sign-h1">Sign in</h1>
-      <div class="login-box">
-
-        <form class="login-form">
-          <label class="login-label">Sign in with account name</label>
-          <input class="login-input">
-          <label class="login-label2">Password</label>
-          <input class="login-input">
-          <div class="remember-me">
-            <input type="checkbox" class="button-size" checked>
-            <label class="color-remeber">Remember me</label>
+      <div class="box-spacing">
+        <div class="login-box">
+          <div class="login-form">
+            <label class="login-label">Sign in with account name</label>
+            <input class="login-input">
+            <label class="login-label2">Password</label>
+            <input class="login-input">
+            <div class="remember-me">
+              <input type="checkbox" class="button-size" checked>
+              <label class="color-remeber">Remember me</label>
+            </div>
+            <button class="sign-in-button">Sign in</button>
+            <a href="" class="help-link">Help, I can't sign in</a>
           </div>
-          <button class="sign-in-button">Sign in</button>
-          <a href="" class="help-link">Help, I can't sign in</a>
-        </form>
 
-        
-        <div class="mobile">
-          <div class="mobile-section">
-            <p class="top-text">New!</p>
-            <p class="mobile-text">Steam Mobile App users can sign in by scanning a QR code.</p>
-            <div class="show-me"><p class="show-me-p">Show me a QR code</p></div>
-            <p class="learn-more"><a href="#" class="learn-a">Learn more</a></p>
+          <div class="mobile">
+            <div class="mobile-section">
+              <p class="top-text">NEW!</p>
+              <p class="mobile-text">Steam Mobile App users can sign in by scanning a QR code.</p>
+              <div class="show-me"><p class="show-me-p">Show me a QR code</p></div>
+              <p class="learn-more"><a href="#" class="learn-a">Learn more</a></p>
+            </div>
           </div>
-        </div>
-        <div class="qr-section">
-          <p class="qr-p">Or sign in with QR</p>
-          <img src="images/Example-QR-code.webp" alt="QR Code" class="qr-img" />
-          <p class="qr-text">
-            Use the <a href="#" class="qr-link">Steam Mobile App</a> to sign in via QR code
-          </p>
+          <div class="qr-section">
+            <p class="qr-p">Or sign in with QR</p>
+            <img src="images/Example-QR-code.webp" alt="QR Code" class="qr-img" />
+            <p class="qr-text">
+              Use the <a href="#" class="qr-link">Steam Mobile App</a> to sign in via QR code
+            </p>
+          </div>
         </div>
       </div>
+        
     </div>
   </div>
 
@@ -93,7 +103,7 @@
         <a href="#" class="bottom-text">About Valve</a> | <a href="#" class="bottom-text">Jobs</a> | <a href="#" class="bottom-text">Steamworks</a> | <a href="#" class="bottom-text">Support</a> | <a href="#" class="bottom-text">Gift Cards</a> | <img src="images/ico_facebook.png" alt="facebook" class="bottom-text"> | <img src="images/ico_twitter.png" alt="twitter" class="bottom-text"> | <img src="images/ico_bsky.png" alt="bsky" class="bottom-text">
       </div>
   </div>
-  <div class="extra-space"></div>
+  
 
 </body>
 </html>

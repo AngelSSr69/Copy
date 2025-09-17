@@ -5,6 +5,22 @@
   .qr-section {
     display: none;
   }
+   .hamburger-size {
+    width: 36px;
+    padding-top: 7px;
+  }
+
+  .bar {
+  background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    height: 50px;
+    padding-left: 7px;
+    padding-top: 7px;
+}
 
 .body {
   font-family: 'Motiva Sans', 'Segoe UI', sans-serif;
@@ -34,15 +50,17 @@
 
 
 .logo {
-  height: 40px;
+  height: 37px;
   position: fixed;
   background-color: rgb(0, 0, 0);
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 1000;
+  margin-left: 33%;
+  padding-top: 9px;
 }
+
 
 .nav .a {
   display: none;
@@ -83,13 +101,14 @@
 }
 
 .login-form .login-label {
-  display: block;
+  display: flex;
+  align-items:start;
   color: #408cfe;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 5px;
-  padding-right: 95px;
+  
 }
 
 .login-label2 {
@@ -158,7 +177,7 @@
 }
 
 .help-link {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 13px;
   color: #b0b0b0;
   display: block;
@@ -167,31 +186,40 @@
 
 
 .top-text {
-  color:  #2d73ff;
+  color:  #1999ff;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 60px;
 }
+
 .mobile-text {
   color: #b0b0b0;
+  text-align: center;
   font-size: 14px;
-  width: 120px;
-  padding-left: 80px;
+  font-weight: 400;
+  line-height: 16px;
+  width: 180px;
+  padding-left: 30px;
 }
 
 .show-me {
-  background-color: rgb(255, 255, 255, .1);
+  background-color: rgb(255, 255, 255, .2);
   max-width: 150px;
   height: 40px;
-  margin-left: 60px;
+  margin-left: 45px;
 }
 
 .show-me-p {
   color: white;
   padding-top: 8px;
   font-size: 14px;
+  font-weight: 700;
 }
 
 .learn-more .learn-a {
   color: #b0b0b0;
   font-size: 14px;
+  
 }
 
 .create-account {
@@ -199,23 +227,35 @@
   text-align: center;
 }
 
-.extra-space {display: none;}
 
-.account-text, .account-text-button {
-  font-size: 18px;
+.account-text {
+  font-size: 20px;
   font-weight: bold;
+  font-weight: 800;
+  margin-bottom: 1px;
+  margin-top: 110px;
+}
+
+.account-text-button {
+  font-size: 18px;
+  font-weight: 300;
   margin-bottom: 10px;
+  border-radius: 2px;
 }
 
 .create-text, .account-link {
   font-size: 14px;
-  color: #b0b0b0;
+  color: #b8b6b4;
+  margin-bottom: 125px;
 }
 
+
 .create-account .account-text-button {
-  padding: 12px 24px;
+  padding: 5px 13px;
   margin-top: 20px;
-  background: linear-gradient(to right, #06bfff, #2d73ff);
+  background: linear-gradient(to right, #47bfff 5%, #1a44c2 60%);
+  background-position: 25%;
+  background-size: 330% 100%;
   border: none;
   color: white;
   border-radius: 3px;
@@ -237,10 +277,331 @@
 }
 }
 
+@media (min-width: 701px) and (max-width: 1023px) {
+  .mobile {
+    display: none;
+  }
+
+  .hamburger-size {
+    width: 40px;
+  }
+
+  .header {
+  background: #171a21;
+  padding: 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav, .header-right {
+  display: none;
+}
+
+.header-container {
+  display: flex;
+}
+    
+.bar {
+  background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    height: 50px;
+    padding-left: 7px;
+    padding-top: 7px;
+}
+
+.logo {
+  height: 40px;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 20%;
+  z-index: 1000;
+  margin-left: 39%;
+  padding-top: 5px;
+}
+
+.nav .a {
+  display: none;
+}
+
+.header-right {
+  display: none;
+}
+
+  .footer-section {
+    display: none;
+  }
+
+  .html-body {
+    height: 100%;
+    min-height: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .body {
+    font-family: 'Motiva Sans', 'Segoe UI', sans-serif;
+    background: radial-gradient(rgba(24, 26, 33, 0) 0%, #181A21 100%) fixed no-repeat, url("images/new_login_bg_strong_mask.jpg") center top no-repeat, #181A21;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .main-login {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+
+  .background-overlay {
+    position: absolute;
+    inset: 0;
+  }
+
+  .login-wrapper {
+    position: relative;
+    max-width: 900px;
+    width: 80%;
+    text-align: left;
+    z-index: 2;
+    padding: 40px 40px 160px 0px;
+  }
+
+
+  .login-wrapper .sign-h1 {
+    position: relative;
+    bottom: 15px;
+    left: 13px;
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+
+  .login-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #171a21;
+    padding: 30px 30px 0px 30px;
+    border-radius: 8px;
+    gap: 30px;
+
+  }
+
+
+  .login-form {
+    flex: 1 1 300px;
+  }
+
+  .login-form .login-label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: #408cfe;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  .login-label2 {
+  display: block;
+  color: #b0b0b0;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding-top: 15px;
+}
+
+  .login-form .pass {
+    color: rgba(232, 231, 231, 0.838)
+  }
+
+  .login-form .login-input, .pass {
+    width: 400px;
+    padding: 10px;
+    background: #32353c;
+    border: none;
+    color: white;
+    border-radius: 4px;
+  }
+
+  .box-spacing {display: flex;
+  flex-direction: row;}
+
+  .login-form .sign-in-button {
+    margin-top: 20px;
+    padding: 10px;
+    background: linear-gradient(to right, #06bfff, #2d73ff);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .login-form .sign-in-button:hover, .account-text-button:hover,
+  .create-account {
+    filter: brightness(1.1);
+  }
+
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 0px;
+    margin-top: 5px;
+  }
+
+  .remember-me .color-remeber {
+    color: #b0b0b0;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    padding-top: 7px;
+  }
+
+  .button-size {
+    position: relative;
+    top: 4px;
+    width: 25px;
+    height: 25px;
+    accent-color: #5f6368;
+    color: #5f6368;
+    background-color: #5f6368;
+  }
+
+  .button-size {
+    margin-right: 10px;
+    color: #5f6368
+  }
+
+  .login-form .sign-in-button {
+    height: 50px;
+    width: 250px;
+    position: relative;
+    left: 70px;
+  }
+
+  .help-link {
+    display: block;
+    margin-top: 45px;
+    font-size: 13px;
+    color: #b0b0b0;
+    position: relative;
+    left: 135px;
+  }
+
+  .qr-section {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .qr-section .qr-p {
+    font-weight: 600;
+    color: #408cfe;
+    margin-bottom: 10px;
+  }
+
+  .qr-p {
+    position: relative;
+    right: 33px;
+    top: 8px;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  .qr-img {
+    width: 200px;
+    height: 200px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .qr-text {
+    font-size: 12px;
+    margin-top: 8px;
+    color: #b0b0b0;
+    text-align: center;
+    line-height: 1.5;
+    width: 230px;
+  }
+
+  .qr-text .qr-link {
+    color: #b0b0b0;
+  }
+
+  .create-account {
+    background: #171a21;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+  }
+
+  .account-text, .account-text-button {
+    position: relative;
+    right: 100px;
+    margin-right: 90px;
+  }
+
+  .account-text {margin-bottom: 0px;}
+
+  .create-account .create-text {
+    position: relative;
+    left: 390px;
+    width: 320px;
+    bottom: 100px;
+    font-size: 16px;
+    color: #b0b0b0;
+  }
+
+  .create-text .account-link {
+    color: #b0b0b0;
+  }
+
+  .create-account .account-text-button {
+    padding: 12px 24px 12px 24px;
+    background: linear-gradient(to right, #06bfff, #2d73ff);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    margin: 20px 90px 20px 0px;
+    cursor: pointer;
+  }
+
+
+  .account-text-button, .create-text{
+    padding: 0;
+    margin: 0;
+  }
+
+}
+
+
 
 
 @media (min-width: 1024px) {
   .mobile {
+    display: none;
+  }
+  .hamburger-size {
     display: none;
   }
 
@@ -687,8 +1048,5 @@
    align-items: center;
   }
 
-  .extra-space {
-    height: 60px;
-  }
-
+ 
 }
